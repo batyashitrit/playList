@@ -1,23 +1,24 @@
 import SongRow from "./SongRow";
-import SongCard from "./SongCard";
+// import SongCard from "./SongCard";
 import { useState } from "react";
 
 export default function List(props) {
   return (
-    <>
-      <h1>Song List</h1>
+    <div className="list">
+      {/* <h1>Song List</h1> */}
       {props.list.map((v) => (
-        <SongRow>
+        <SongRow key={v.song}>
           <h2
+            key={v.song}
             onClick={(e) => {
-              props.setClick(1);
+              props.name == e.target.outerText && props.setClick(!props.click);
               props.setN(e.target.outerText);
             }}
           >
-            {v.song}
+            🎵{v.song}
           </h2>
         </SongRow>
       ))}
-    </>
+    </div>
   );
 }

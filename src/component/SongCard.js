@@ -1,8 +1,14 @@
+import songCard from "./songCard.png";
+
 export default function SongCard(props) {
   return (
-    <>
-      <h1>Now playing</h1>
-      <h2>{props.songname}</h2>
-    </>
+    <div>
+      <img className="cardImg" src={songCard} />
+      <div className="songCard">
+        <h3>Now playing</h3>
+
+        <h4>{props.songname}</h4>
+      </div>
+    </div>
   );
 }
