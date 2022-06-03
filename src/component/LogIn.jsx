@@ -12,20 +12,19 @@ export default function LogIn(props) {
 
   return (
     <div>
-      <form>
-        <input
+      <form className="form">
+        <input className="input"
           type="text"
           placeholder="whats your name?"
           onChange={(e) => props.username.setName(e.target.value)}
-          required
-        />
-        <input
+          required/>
+        <input className="input"
           type="text"
           placeholder="password"
           onChange={(e) => props.password.setPassword(e.target.value)}
           required
         />
-        <button>
+        <button className="btnLogIn">
           <Link to={isDisable && "/playlist"}>get in</Link>
         </button>
       </form>
