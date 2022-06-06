@@ -5,7 +5,7 @@ import { useState } from "react";
 import { songList } from "./options";
 import { DeleteSong } from "./component/DeleteSong";
 import { AddSong } from "./component/AdSong";
-import background from "./images.jfif";
+import background from "./pic2.jpg";
 import Header from "./component/Header";
 
 export default function Layout(props) {
@@ -15,7 +15,7 @@ export default function Layout(props) {
 
   return (
     <>
-      <img src={background} className="background" />
+      {/* <img src={background} className="background" /> */}
       <Header username={props.username}></Header>
       <List
         setN={setName}

@@ -44,6 +44,7 @@
 .list{
 position: relative;
 top: 30px;
+color: aliceblue;
 }
 .form{
   justify-content: center;
