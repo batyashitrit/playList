@@ -1,3 +1,7 @@
+body{
+  background-image: url("pic2.jpg");
+  background-size: 2000px;
+}
 .App {
   text-align: center;
 }
@@ -31,8 +35,6 @@
 
 
 .username {
-  /* position:relative; */
-  /* top: 30%; */
   font-family: cursive;
   font-weight: bold;
   color: gray;
