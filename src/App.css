@@ -77,3 +77,14 @@ color: aliceblue;
   height: 50px;
   width: 200px;
 }
+
+
+.plyr{
+  width: 150px;
+  height: 150px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  left: 500px;
+}

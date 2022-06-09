@@ -1,4 +1,5 @@
 // import List from "./List";
 export default function SongRow(props) {
-  return <>{props.children}</>;
+  console.log(props)
+  return <div >{props.children}</div>;
 }
