@@ -9,7 +9,7 @@ function AddSong(props) {
     setisClicked(1);
   }
   return (
-    <div className="button">
+    <div className="buttonadd">
       {!isClicked ? <button onClick={onClick1}>AddSong</button> : ""}
       {isClicked ? (
         <>
@@ -25,7 +25,6 @@ function AddSong(props) {
           <button
             onClick={(e) => {
               setisClicked(0);
-
               //   props.list.push({ song: newSong });
               props.setList([...props.list, { song: newSong }]);
               console.log(props.list);

@@ -2,6 +2,8 @@ import SongRow from "./SongRow";
 // import SongCard from "./SongCard";
 import { useState } from "react";
 import SongCard from "./SongCard";
+import Plyr from "plyr-react"
+
 
 
 export default function List(props) {
@@ -24,6 +26,7 @@ export default function List(props) {
           </h2>
         </SongRow>
       ))}
+      {/* <Plyr></Plyr> */}
     </div>
   );
 }

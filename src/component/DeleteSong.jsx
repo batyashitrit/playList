@@ -8,7 +8,7 @@ function DeleteSong(props) {
     setIsClick(1);
   }
   return (
-    <div className="button">
+    <div className="buttondel">
       <button onClick={onClick}>DeleteSong</button>
       {isClick ? (
         <select

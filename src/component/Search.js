@@ -3,13 +3,14 @@ import { useState } from 'react'
 
 
 export default function Search(props) {
-    const [filterdList, setFiltered]=useState([])
+    const [filterdList, setFilteredList]=useState([])
 
   return (
-    <div>Search
-    <input type="search" onChange={(e)=>{setFiltered(props.externalList.results.filter((v)=>v.title.includes(e.target.value)))}}>
-        {console.log(filterdList)}
+    <div>
+    <input type="search" className='search' placeholder='Search' onChange={(e)=>{setFilteredList(props.externalList.results.filter((v)=>v.title.toLowerCase().includes(e.target.value.toLowerCase())))}}>
        </input>
+       <div>{filterdList.map(v=> 
+        <h3 className='list'>{v.title}</h3>)}</div>
     </div>
   )
 }
