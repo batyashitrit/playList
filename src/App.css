@@ -8,6 +8,8 @@ body{
   text-align: center;
 }
 
+
+
 /* .disabled {
   pointer-events: none;
 } */
@@ -29,8 +31,8 @@ flex-direction: column;
 }
 
 .list{
-position: relative;
-top: 30px;
+position: absolute;
+top: 210px;
 color: aliceblue;
 /* display: flex; */
 align-items: flex-start;
@@ -58,38 +60,26 @@ justify-content: left;
   background-color: gold;
 }
 
-.input{
-  font-size: large;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 200px;
-}
-
 
 .plyr{
    /* display: flex; */
-  align-self: center;
-  justify-content: center;
-  top: 20px;
-  flex-direction: row;
-  /* align-items: center; */
-  /* width: 500px;
-  height: 500px; */
-  /* float: right; */
+   /* justify-content: flex-start; */
+   /* text-align: center; */
+   position:absolute;
+   
 
 }
 
 .search{
-height: 50px;
-width: 200px;
+
 }
 
 .buttondel{
   display: flex;
-  justify-content: right;
+  justify-content: flex-start;
+  align-items: flex-end;
   font-family: cursive;
+  border: 20%;
 }
 
 .buttonadd{
@@ -100,4 +90,22 @@ width: 200px;
   /* align-content: flex-start; */
   /* flex-direction: column; */
   /* align-content: flex-end; */
+}
+
+.externalList{
+  color: white;
+  display:flex;
+  justify-content:flex-end;
+  flex-direction: column;
+  float: right;
+ width: 18%;
+ text-align: center;
+}
+
+
+.btn{
+background-color: transparent;
+border: none;
+cursor: pointer;
+font-size: large;
 }

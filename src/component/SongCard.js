@@ -6,6 +6,7 @@ import { useState } from "react";
 
 
 export default function SongCard(props) {
+  console.log(props)
   const plyrProps = {
     type: 'video',
     sources: [
