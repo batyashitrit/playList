@@ -1,31 +1,41 @@
 body{
   background-image: url("pic2.jpg");
-  background-size:cover;
+  background-size: 10000px;
   font-family: cursive;
-  padding: 40px;
 }
 .App {
   text-align: center;
 }
 
 
-
+.input{
+/* border-radius: 12px; */
+width: 250px;
+height: 50px;
+}
 /* .disabled {
   pointer-events: none;
 } */
 
 .allPage{
 display: flex;
+padding: 40px;
+
 flex-direction: column;
 }
 
+.head{
+  display: inline;
+}
 .username {
   font-family: cursive;
   font-weight: bold;
-  color: gray;
-  text-shadow: 5px 5px 15px gray;
-  /* text-align: center; */
-  font-size: 50px
+  color:white;
+  text-shadow: 5px 5px 15px black;
+  text-align: center;
+  font-size: 50px;
+  background-color: silver;
+   opacity: 0.6;;
 
 
 }
@@ -33,11 +43,13 @@ flex-direction: column;
 .list{
 position: absolute;
 top: 210px;
+width: 240px;
 color: aliceblue;
 /* display: flex; */
 align-items: flex-start;
 align-self: flex-start;
 justify-content: left;
+font-family: Arial, Helvetica, sans-serif;
 }
 .form{
   justify-content: center;
@@ -60,27 +72,41 @@ justify-content: left;
   background-color: gold;
 }
 
-
+.bigPlyr{
+     display: flex;
+   justify-content: center;
+}
 .plyr{
-   /* display: flex; */
-   /* justify-content: flex-start; */
-   /* text-align: center; */
-   position:absolute;
+
+width: 1000px;
+height: 600px;
+justify-content: center;
+border-style: solid;
+border-width: 5px, 20px;
+border-color:  white;
    
 
 }
 
 .search{
-
+top: 20px;
+border-radius: 12px;
+width: 200px;
+height: 40px;
 }
 
-.buttondel{
+.bigBtn{
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  font-family: cursive;
-  border: 20%;
+  justify-content:start;
+  align-content: flex-start;
 }
+.buttondel{
+  /* display: flex;
+  justify-content: flex-start; */
+  top: 10px;
+  font-family: cursive;
+  border-radius: 12px;
+  }
 
 .buttonadd{
   display: flex;
@@ -91,15 +117,21 @@ justify-content: left;
   /* flex-direction: column; */
   /* align-content: flex-end; */
 }
-
+/* .bigExternalList{
+  display:flex;
+  justify-content:right;
+  flex-direction: row;
+} */
 .externalList{
   color: white;
-  display:flex;
-  justify-content:flex-end;
-  flex-direction: column;
   float: right;
- width: 18%;
+  position:absolute;
+  right: 2%;
+ width: 16%;
  text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ cursor: pointer;
+
 }
 
 
@@ -108,4 +140,17 @@ background-color: transparent;
 border: none;
 cursor: pointer;
 font-size: large;
+}
+
+.btn:hover {background-color: indianred}
+
+.btn:active {
+  background-color:indianred;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.icon{
+  width: 180px;
+  height: 130px;
 }

@@ -5,8 +5,8 @@ export default function List(props) {
     <div className="list">
       {/* <h1>Song List</h1> */}
       {props.list.map((v) => (
-        <SongRow id={v.id} key={v.song}>
-          <h2
+        <SongRow id={v.id} key={v.title}>
+          <h3
             key={v.song}
             onClick={(e) => {
               props.name == e.target.outerText && props.setClick(!props.click);
@@ -14,8 +14,8 @@ export default function List(props) {
               props.setId(v.id)
             }}
             >
-            🎵{v.song}
-          </h2>
+            🎵{v.title}
+          </h3>
         </SongRow>
       ))}
     </div>

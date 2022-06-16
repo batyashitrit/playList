@@ -30,21 +30,22 @@ export default function Layout(props) {
   // const filterd=externalList.filter(v=>v.title.includes(search))
   return (
     <>
+      <Header username={props.username}></Header>
     <div className="allPage">
+      <div className="head">
       {/* <div>{externalList.filter(v=>v.title.includes(search))}</div> */}
       {/* <img src={background} className="background" /> */}
-      <Header username={props.username}></Header>
-      <div>
-        <DeleteSong list={songList1} setList={setSongList1}></DeleteSong>
-      </div>
+      <DeleteSong list={songList1} setList={setSongList1}></DeleteSong>
       <Search list={songList1} setList={setSongList1} setClick={setIsClick}
         click={isClick}   setId={setId}
-        id={id}> </Search>
+        id={id}> </Search></div>
+      
+      
       <List
         setN={setName}
         name={name}
         list={songList1}
-        song={songList.song}
+        song={songList.title}
         setClick={setIsClick}
         click={isClick}
         setId={setId}
@@ -54,7 +55,7 @@ export default function Layout(props) {
         <AddSong list={songList1} setList={setSongList1}></AddSong>
       </p> */}
       </div>
-      {/* {isClick ? (
+      {isClick ? (
         <SongCard
           setClick={props.setIsClick}
           list={songList1}
@@ -63,7 +64,7 @@ export default function Layout(props) {
         ></SongCard>
       ) : (
         <div></div>
-      )} */}
+      )}
    
   </>
   );

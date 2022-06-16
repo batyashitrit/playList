@@ -8,18 +8,18 @@ function DeleteSong(props) {
     setIsClick(1);
   }
   return (
-    <div className="buttondel">
-      <button onClick={onClick}>DeleteSong</button>
+    <div className="bigBtn">
+      <button className="buttondel"onClick={onClick}>Delete Song</button>
       {isClick ? (
         <select
           onChange={(e) => {
-            props.setList(props.list.filter((v) => v.song != e.target.value));
+            props.setList(props.list.filter((v) => v.title != e.target.value));
             setIsClick(0);
           }}
         >
           <option>which song do you want delete?</option>
           {props.list.map((v) => (
-            <option>{v.song}</option>
+            <option>{v.title}</option>
           ))}
         </select>
       ) : (

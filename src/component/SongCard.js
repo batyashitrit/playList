@@ -17,6 +17,7 @@ export default function SongCard(props) {
     ],
   };
   return (
+    <div className="bigPlyr">
     <div className="plyr">
       <Plyr source = {plyrProps}></Plyr>
       {/* <Plyr></Plyr> */}
@@ -25,6 +26,7 @@ export default function SongCard(props) {
         <h3>Now playing</h3>
         <h4>{props.songname}</h4> */}
       {/* </div> */}
+    </div>
     </div>
   );
 }
